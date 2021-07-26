@@ -9,10 +9,10 @@
     },
     {
       "name": "bionic",
-      "version": "20210714004312",
-      "commit": "061a788",
+      "version": "20210726221519",
+      "commit": "94debbc",
       "upstream": "Ubuntu 18.04",
-      "lastUpdated": "2021-07-14T00:46:42.016Z"
+      "lastUpdated": "2021-07-26T22:18:32.907Z"
     },
     {
       "name": "alpine",
