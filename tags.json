@@ -16,10 +16,10 @@
     },
     {
       "name": "alpine",
-      "version": "20210617173146",
-      "commit": "9d239bc",
+      "version": "20210730191204",
+      "commit": "a2e55fd",
       "upstream": "Alpine",
-      "lastUpdated": "2021-06-17T17:32:42.979Z"
+      "lastUpdated": "2021-07-30T19:12:48.552Z"
     },
     {
       "name": "alpine3.13",
