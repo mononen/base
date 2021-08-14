@@ -23,10 +23,10 @@
     },
     {
       "name": "alpine3.13",
-      "version": "20210808211440",
-      "commit": "02c86ca",
+      "version": "20210814150933",
+      "commit": "e673fc4",
       "upstream": "Alpine 3.13",
-      "lastUpdated": "2021-08-08T21:27:50.028Z"
+      "lastUpdated": "2021-08-14T15:10:23.811Z"
     }
   ],
   "pulls": 2052291,
