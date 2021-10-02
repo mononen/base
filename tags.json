@@ -8,25 +8,11 @@
       "lastUpdated": "2021-10-02T07:19:01.948Z"
     },
     {
-      "name": "bionic",
-      "version": "20211001031538",
-      "commit": "5fcf24e",
-      "upstream": "Ubuntu 18.04",
-      "lastUpdated": "2021-10-01T03:18:53.575Z"
-    },
-    {
       "name": "alpine",
       "version": "20211001124931",
       "commit": "f345175",
       "upstream": "Alpine",
       "lastUpdated": "2021-10-01T12:50:41.945Z"
-    },
-    {
-      "name": "alpine3.13",
-      "version": "20210901031531",
-      "commit": "9da2c1f",
-      "upstream": "Alpine 3.13",
-      "lastUpdated": "2021-09-01T03:16:36.366Z"
     }
   ],
   "pulls": 2070603,
