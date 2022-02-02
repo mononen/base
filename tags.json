@@ -2,10 +2,10 @@
   "tags": [
     {
       "name": "focal",
-      "version": "20220202023504",
-      "commit": "c566203",
+      "version": "20220202041904",
+      "commit": "ff54e3b",
       "upstream": "Ubuntu 20.04",
-      "lastUpdated": "2022-02-02T02:36:40.227Z"
+      "lastUpdated": "2022-02-02T04:23:26.931Z"
     },
     {
       "name": "alpine",
