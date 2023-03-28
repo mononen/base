@@ -1,7 +1,9 @@
 .git
 .github
 .gitattributes
-VERSION.json
-puppeteer.js
-update.sh
+build.sh
+LICENSE
 README.md
+update-digests.sh
+update-versions.sh
+VERSION.json
