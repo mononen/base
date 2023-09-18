@@ -1,5 +1,5 @@
-ARG UPSTREAM_IMAGE
-ARG UPSTREAM_DIGEST_AMD64
+ARG UPSTREAM_IMAGE=alpine
+ARG UPSTREAM_DIGEST_AMD64=3.18
 
 FROM --platform=linux/amd64 alpine AS builder 
 
@@ -44,15 +44,6 @@ RUN mkdir "${APP_DIR}" && \
 # create user
     useradd -u 568 -U -d "${CONFIG_DIR}" -s /bin/false hotio && \
     usermod -G users hotio
-
-# https://github.com/just-containers/s6-overlay/releases
-ARG S6_VERSION=3.1.5.0
-
-# install s6-overlay
-RUN curl -fsSL "https://github.com/just-containers/s6-overlay/releases/download/v${S6_VERSION}/s6-overlay-noarch.tar.xz" | tar Jpxf - -C / && \
-    curl -fsSL "https://github.com/just-containers/s6-overlay/releases/download/v${S6_VERSION}/s6-overlay-x86_64.tar.xz" | tar Jpxf - -C / && \
-    curl -fsSL "https://github.com/just-containers/s6-overlay/releases/download/v${S6_VERSION}/s6-overlay-symlinks-noarch.tar.xz" | tar Jpxf - -C / && \
-    curl -fsSL "https://github.com/just-containers/s6-overlay/releases/download/v${S6_VERSION}/s6-overlay-symlinks-arch.tar.xz" | tar Jpxf - -C /
 
 ARG BUILD_ARCHITECTURE
 ENV BUILD_ARCHITECTURE=$BUILD_ARCHITECTURE
