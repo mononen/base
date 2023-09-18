@@ -1,7 +1,7 @@
 ARG UPSTREAM_IMAGE
 ARG UPSTREAM_DIGEST_AMD64
 
-FROM alpine AS builder
+FROM --platform=linux/amd64 alpine AS builder 
 
 ARG UNRAR_VER=6.2.4
 
