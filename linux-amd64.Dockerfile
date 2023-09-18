@@ -1,5 +1,5 @@
 ARG UPSTREAM_IMAGE=alpine
-ARG UPSTREAM_DIGEST_AMD64=3.18
+ARG UPSTREAM_VERSION=3.18
 
 FROM --platform=linux/amd64 alpine AS builder 
 
@@ -25,7 +25,7 @@ RUN apk --update --no-cache add \
 && install -Dm 755 unrar /usr/bin/unrar
 
 
-FROM ${UPSTREAM_IMAGE}@${UPSTREAM_DIGEST_AMD64}
+FROM ${UPSTREAM_IMAGE}:${UPSTREAM_VERSION}
 
 ENV APP_DIR="/app" CONFIG_DIR="/config" PUID="568" PGID="568" UMASK="002" TZ="Etc/UTC" ARGS=""
 ENV XDG_CONFIG_HOME="${CONFIG_DIR}/.config" XDG_CACHE_HOME="${CONFIG_DIR}/.cache" XDG_DATA_HOME="${CONFIG_DIR}/.local/share" LANG="C.UTF-8" LC_ALL="C.UTF-8"
